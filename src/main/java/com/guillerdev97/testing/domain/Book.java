@@ -30,4 +30,10 @@ public class Book {
 
     @Column(name = "book_rating")
     private int rating;
+
+    public Book(String name, String summary, int rating) {
+        this.name = name;
+        this.summary = summary;
+        this.rating = rating;
+    }
 }
